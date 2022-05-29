@@ -1,0 +1,91 @@
+.article {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.article__title {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0 0 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.article__about {
+  float: left;
+}
+
+.article__text {
+  margin-bottom: 59px;
+  width: 500px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  float: right;
+}
+
+.text-paragraph {
+  padding-top: 35px;
+}
+
+.text-paragraph:first-child {
+  padding-top: 0;
+}
+
+.article__blockquote {
+  width: 500px;
+  float: right;
+}
+
+.article__quote {
+  font-weight: 400;
+  font-size: 44px;
+  margin: 0;
+  display: block;
+}
+
+.article__quote-paragraph {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.article__quote-paragraph::after {
+  content: "  \201d";
+  font-weight: 900;
+  font-size: 44px;
+  max-width: 38.98px;
+  height: 34.41px;
+  color: #6c0287;
+}
+
+.article__quote-paragraph::before {
+  content: "\201c  ";
+  font-weight: 900;
+  font-size: 44px;
+  width: 38.98px;
+  height: 34.41px;
+  color: #6c0287;
+}
+
+.article__cite {
+  width: 270px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article__images {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 15px 0 110px;
+  object-fit: cover;
+  object-position: 0 25%;
+  display: inline-block;
+  vertical-align: baseline;
+}

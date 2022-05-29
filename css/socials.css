@@ -1,0 +1,68 @@
+.socials {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 243px;
+}
+
+.socials__title {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0px 0px 54px 0px;
+  text-align: center;
+}
+
+.address {
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  font-style: normal;
+  text-transform: none;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__item {
+  padding-left: 60px;
+  margin-bottom: 11px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.address__item:first-child {
+  margin-bottom: 36px;
+}
+
+.address__item:last-child {
+  margin-bottom: 0;
+}
+
+.address__item_type_geo {
+  background-image: url(../image/contacts/location.svg);
+}
+
+.address__item_type_tel {
+  background-image: url(../image/contacts/phone-call.svg);
+}
+
+.address__item_type_mail {
+  background-image: url(../image/contacts/envelope.svg);
+}
+
+.social {
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: 0;
+}
+
+.social__item {
+  margin-right: 20px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: block;
+}

@@ -1,0 +1,36 @@
+.banner {
+  padding-top: 146px;
+}
+
+.container-banner {
+  height: 823px;
+  position: relative;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.container-banner:after {
+  content: "";
+  width: 675px;
+  height: 762px;
+  position: absolute;
+  background: url(../image/banner/men-desktop.png);
+  bottom: 0;
+  right: 0;
+}
+
+.banner__items {
+  font-weight: 900;
+  font-size: 150px;
+  text-transform: uppercase;
+  letter-spacing: -0.1em;
+  line-height: 100%;
+  margin: 0;
+}
+
+.banner__paragraph {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+  margin: 0 0 0 100px;
+}
