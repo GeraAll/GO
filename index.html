@@ -6,13 +6,70 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <header>
+      <section class="menu">
+        <div class="container container-menu">
+          <img src="./image/menu/logo.svg" alt="Game Over" />
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__items"><a href="#halls">Залы</a></li>
+              <li class="menu__items"><a href="#article">О нас</a></li>
+              <li class="menu__items"><a href="#book">Бронь</a></li>
+              <li class="menu__items"><a href="#feedback">Отзывы</a></li>
+              <li class="menu__items"><a href="#socials">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="button-tel" type="submit" aria-label="заказать звонок">
+            Заказать звонок
+          </button>
+        </div>
+      </section>
+    </header>
     <section class="banner">
       <div class="container container-banner">
         <h1 class="banner__items">Game Over</h1>
         <p class="banner__paragraph">Новый формат игр и отдыха</p>
+        <div class="banner__row">
+          <div class="row">
+            <p class="row__four">4</p>
+            <p class="row__paragraph">Тематических зала</p>
+          </div>
+          <div class="row">
+            <p class="row__new">new</p>
+            <p class="row__paragraph">Новейшая аппаратура</p>
+          </div>
+        </div>
+        <div class="banner__button">
+          <a class="button-banner" href="#book" aria-label="Бронирование залов">
+            забронировать
+          </a>
+        </div>
+        <a href="#promo" class="banner__link banner-interactive">
+          <img src="./image/banner/down.svg" alt="спустится к промо" />
+        </a>
       </div>
     </section>
-    <section class="halls">
+    <section class="promo" id="promo">
+      <div class="container">
+        <h2 class="promo__title">
+          У нас есть все для классного <br />
+          отдыха с друзьями!
+        </h2>
+        <ul class="promo__list">
+          <li class="promo__item promo__item-vr">VR очки</li>
+          <li class="promo__item promo__item-audio">
+            Аудио система 5.1 с отличным звуком
+          </li>
+          <li class="promo__item promo__item-karaore">Караоке(4 микрофона)</li>
+          <li class="promo__item promo__item-game">Настольная игра</li>
+          <li class="promo__item promo__item-cinema">
+            Кино сервис Netflix, IVI, MegoGo, КиноПоиск, Okko
+          </li>
+          <li class="promo__item promo__item-console">PlayStation 5</li>
+        </ul>
+      </div>
+    </section>
+    <section class="halls" id="halls">
       <div class="container">
         <h2 class="halls__title">Наши залы</h2>
         <ul class="halls__list">
@@ -23,7 +80,252 @@
         </ul>
       </div>
     </section>
-    <section class="article">
+    <section class="book" id="book">
+      <div class="container">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <h3 class="book__title">Забронировать зал просто</h3>
+          <fieldset class="book__hall">
+            <legend class="book__legend">Выбери зал</legend>
+            <input
+              class="book__input"
+              type="radio"
+              name="hall"
+              value="80's vibes"
+            />
+            <label class="book__label">80's vibes</label>
+            <input
+              class="book__input"
+              type="radio"
+              name="hall"
+              value="Star wars"
+            />
+            <label class="book__label">Star wars </label>
+            <input
+              class="book__input"
+              type="radio"
+              name="hall"
+              value="Wild west"
+            />
+            <label class="book__label">Wild west </label>
+            <input
+              class="book__input"
+              type="radio"
+              name="hall"
+              value="Neon style"
+            />
+            <label class="book__label">Neon style </label>
+          </fieldset>
+          <div class="book__booking">
+            <fieldset class="book__game">
+              <legend class="book__legend">Собери набор развлечений</legend>
+              <div class="fieldset-game">
+                <fieldset>
+                  <legend class="book__legend book__legend-left">
+                    Приставка:
+                  </legend>
+                  <ul class="book__game-list">
+                    <li class="book__game-item">
+                      <input
+                        class="book__input-console"
+                        type="radio"
+                        name="prefix"
+                        value="PlayStation"
+                        id="PlayStation"
+                      />
+                      <label class="book__game-label" for="PlayStation"
+                        >PlayStation</label
+                      >
+                    </li>
+                    <li class="book__game-item">
+                      <input
+                        class="book__input-console"
+                        type="radio"
+                        name="prefix"
+                        value="SegaMegaDrive"
+                        id="SegaMegaDrive"
+                      />
+                      <label class="book__game-label" for="SegaMegaDrive"
+                        >SegaMegaDrive</label
+                      >
+                    </li>
+                    <li class="book__game-item">
+                      <input
+                        class="book__input-console"
+                        type="radio"
+                        name="prefix"
+                        value="X-box One S"
+                        id="X-box One S"
+                      />
+                      <label class="book__game-label" for="X-box One S"
+                        >X-box One S</label
+                      >
+                    </li>
+                    <li class="book__game-item">
+                      <input
+                        class="book__input-console"
+                        type="radio"
+                        name="prefix"
+                        value="Dendy"
+                        id="Dendy"
+                      />
+                      <label class="book__game-label" for="Dendy">Dendy</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <legend class="book__legend book__legend-left">
+                    Настольные игры:
+                  </legend>
+                  <ul class="book__game-list">
+                    <li class="book__game-item">
+                      <input
+                        class="book__input-console"
+                        type="checkbox"
+                        name="games"
+                        value="Jenga"
+                        id="Jenga"
+                      />
+                      <label class="book__game-label" for="Jenga">Jenga</label>
+                    </li>
+                    <li class="book__game-item">
+                      <input
+                        class="book__input-console"
+                        type="checkbox"
+                        name="games"
+                        value="Monopoly"
+                        id="Monopoly"
+                      />
+                      <label class="book__game-label" for="Monopoly"
+                        >Monopoly</label
+                      >
+                    </li>
+                    <li class="book__game-item">
+                      <input
+                        class="book__input-console"
+                        type="checkbox"
+                        name="games"
+                        value="Манчкин"
+                        id="Манчкин"
+                      />
+                      <label class="book__game-label" for="Манчкин"
+                        >Манчкин</label
+                      >
+                    </li>
+                    <li class="book__game-item">
+                      <input
+                        class="book__input-console"
+                        type="checkbox"
+                        name="games"
+                        value="Alias"
+                        id="Alias"
+                      />
+                      <label class="book__game-label" for="Alias">Alias</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <legend class="book__legend book__legend-left">
+                    Дополнительно:
+                  </legend>
+                  <ul class="book__game-list">
+                    <li class="book__game-item">
+                      <input
+                        class="book__input-console"
+                        type="checkbox"
+                        name="additional"
+                        value="Караоке"
+                        id="Караоке"
+                      />
+                      <label class="book__game-label" for="Караоке"
+                        >Караоке</label
+                      >
+                    </li>
+                    <li class="book__game-item">
+                      <input
+                        class="book__input-console"
+                        type="checkbox"
+                        name="additional"
+                        value="VR"
+                        id="VR"
+                      />
+                      <label class="book__game-label" for="VR">VR</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+            </fieldset>
+            <fieldset class="book__time">
+              <legend class="book__legend">Выбери дату и время</legend>
+              <div class="book__date">
+                <div class="date-one">
+                  <input class="date-input" type="date" name="date" required />
+                  <input class="date-input" type="time" name="time" required />
+                  <input
+                    class="date-number"
+                    type="number"
+                    name="number"
+                    max="30"
+                    placeholder="Сколько человек"
+                    required
+                  />
+                </div>
+                <div class="date-one date-two">
+                  <div>
+                    <label class="date-label">Имя</label>
+                    <input
+                      class="date-number"
+                      type="text"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label class="date-label">Фамилия</label>
+                    <input
+                      class="date-number"
+                      type="text"
+                      name="surname"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="date-one date-two">
+                  <div>
+                    <label class="date-label">Телефон </label>
+                    <input
+                      class="date-number"
+                      type="tel"
+                      name="phone"
+                      required
+                      pattern="\+?[0-9\s\-\(\)]+"
+                    />
+                  </div>
+                  <div>
+                    <label class="date-label">E-mail </label>
+                    <input
+                      class="date-number"
+                      type="email"
+                      name="E-mail"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="book__button">
+              <button
+                class="button-hall"
+                type="submit"
+                aria-label="Бронирование залов"
+              >
+                забронировать
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="article" id="article">
       <div class="container">
         <h2 class="article__title">О нас</h2>
         <img
@@ -59,7 +361,7 @@
         </div>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="container">
         <h3 class="feedback__title">Отзывы посетителей</h3>
         <ul class="feedback__list">
@@ -114,67 +416,142 @@
       <div class="container">
         <h3 class="faq__title">Частые вопросы</h3>
         <ul class="faq__list">
-          <li class="faq__list faq__list_item_white">
-            Можно ли забронировать комнату онлайн?
+          <li class="faq__item">
+            <p class="faq__paragraph">Можно ли забронировать комнату онлайн?</p>
+            <button class="faq__button faq__button-white"></button>
           </li>
-          <li class="faq__list faq__list_item_violet">
-            Могуть ли мне вернуть деньги за бронь?
+          <li class="faq__item">
+            <p class="faq__paragraph">Могуть ли мне вернуть деньги за бронь?</p>
+            <button class="faq__button faq__button-violet"></button>
           </li>
-          <li class="faq__list faq__list_item_white">
-            Какая комната самая популярная?
+          <li class="faq__item">
+            <p class="faq__paragraph">Какая комната самая популярная?</p>
+            <button class="faq__button faq__button-white"></button>
           </li>
-          <li class="faq__list faq__list_item_violet">
-            Как получить VIP карту?
+          <li class="faq__item">
+            <p class="faq__paragraph">Как получить VIP карту?</p>
+            <button class="faq__button faq__button-violet"></button>
           </li>
-          <li class="faq__list faq__list_item_white">
-            Какая комната самая популярная?
+          <li class="faq__item">
+            <p class="faq__paragraph">Какая комната самая популярная?</p>
+            <button class="faq__button faq__button-white"></button>
           </li>
         </ul>
       </div>
     </section>
-    <section class="socials">
+    <section class="socials" id="socials">
       <div class="container">
         <h2 class="socials__title">Контакты</h2>
-        <address class="address">
-          <ul class="address__list">
-            <li class="address__item address__item_type_geo">
-              г. Москва <br />
-              ул. Аквамарина,16
-            </li>
-            <li class="address__item address__item_type_tel">
-              <a class="address__link" href="tel:89509302893"
-                >8(950)930-28-93</a
-              >
-            </li>
-            <li class="address__item address__item_type_mail">
-              <a class="address__link" href="mailto:GameOver@gmail.com"
-                >GameOver@gmail.com
-              </a>
-            </li>
-          </ul>
-        </address>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="https://instagram.com/">
-              <img src="./image/contacts/insta.svg" alt="Instagram" />
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/">
-              <img src="./image/contacts/vk.svg" alt="Vkontakte" />
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://facebook.com/">
-              <img src="./image/contacts/fecebook.svg" alt="Facebook" />
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://desktop.telegram.org/">
-              <img src="./image/contacts/telegram.svg" alt="Telegram" />
-            </a>
-          </li>
-        </ul>
+        <div class="socials__container">
+          <div class="socials__side-left">
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item address__item_type_geo">
+                  г. Москва <br />
+                  ул. Аквамарина,16
+                </li>
+                <li class="address__item address__item_type_tel">
+                  <a class="address__link" href="tel:89509302893"
+                    >8(950)930-28-93</a
+                  >
+                </li>
+                <li class="address__item address__item_type_mail">
+                  <a class="address__link" href="mailto:GameOver@gmail.com"
+                    >GameOver@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <ul class="social">
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://instagram.com/"
+                  target="_blank"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M31.501 23.9998C31.501 25.9889 30.7108 27.8965 29.3043 29.3031C27.8978 30.7096 25.9901 31.4998 24.001 31.4998C22.0119 31.4998 20.1042 30.7096 18.6977 29.3031C17.2912 27.8965 16.501 25.9889 16.501 23.9998C16.501 23.5723 16.546 23.1548 16.6235 22.7498H14.001V32.7423C14.001 33.4373 14.5635 33.9998 15.2585 33.9998H32.746C33.0791 33.9991 33.3983 33.8663 33.6336 33.6306C33.8689 33.3948 34.001 33.0753 34.001 32.7423V22.7498H31.3785C31.456 23.1548 31.501 23.5723 31.501 23.9998ZM24.001 28.9998C24.6578 28.9996 25.3081 28.8701 25.9148 28.6186C26.5215 28.3671 27.0728 27.9986 27.537 27.534C28.0013 27.0695 28.3696 26.5181 28.6208 25.9112C28.872 25.3044 29.0012 24.654 29.001 23.9973C29.0008 23.3405 28.8713 22.6902 28.6198 22.0835C28.3683 21.4767 27.9998 20.9255 27.5353 20.4612C27.0708 19.9969 26.5193 19.6287 25.9125 19.3775C25.3056 19.1263 24.6553 18.9971 23.9985 18.9973C22.6721 18.9976 21.4001 19.5248 20.4624 20.463C19.5248 21.4011 18.9982 22.6733 18.9985 23.9998C18.9988 25.3262 19.5261 26.5981 20.4642 27.5358C21.4024 28.4735 22.6746 29.0001 24.001 28.9998ZM30.001 18.7498H32.9985C33.1976 18.7498 33.3887 18.6708 33.5297 18.5302C33.6708 18.3897 33.7503 18.1989 33.751 17.9998V15.0023C33.751 14.8027 33.6717 14.6113 33.5306 14.4702C33.3895 14.329 33.1981 14.2498 32.9985 14.2498H30.001C29.8014 14.2498 29.61 14.329 29.4689 14.4702C29.3278 14.6113 29.2485 14.8027 29.2485 15.0023V17.9998C29.251 18.4123 29.5885 18.7498 30.001 18.7498ZM24.001 -0.000244141C17.6358 -0.000244141 11.5313 2.52832 7.03042 7.02919C2.52954 11.5301 0.000976563 17.6346 0.000976562 23.9998C0.000976563 30.365 2.52954 36.4694 7.03042 40.9703C11.5313 45.4712 17.6358 47.9998 24.001 47.9998C27.1527 47.9998 30.2736 47.379 33.1854 46.1729C36.0972 44.9667 38.743 43.1989 40.9716 40.9703C43.2002 38.7417 44.968 36.096 46.1741 33.1842C47.3802 30.2723 48.001 27.1515 48.001 23.9998C48.001 20.848 47.3802 17.7272 46.1741 14.8154C44.968 11.9035 43.2002 9.2578 40.9716 7.02919C38.743 4.80059 36.0972 3.03276 33.1854 1.82665C30.2736 0.620534 27.1527 -0.000244141 24.001 -0.000244141ZM36.501 33.7223C36.501 35.2498 35.251 36.4998 33.7235 36.4998H14.2785C12.751 36.4998 11.501 35.2498 11.501 33.7223V14.2773C11.501 12.7498 12.751 11.4998 14.2785 11.4998H33.7235C35.251 11.4998 36.501 12.7498 36.501 14.2773V33.7223Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link social__link-interactive"
+                  href="https://vk.com/"
+                  target="_blank"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.0002 0C10.7452 0 0.000152588 10.745 0.000152588 24C0.000152588 37.255 10.7452 48 24.0002 48C37.2552 48 48.0002 37.255 48.0002 24C48.0002 10.745 37.2552 0 24.0002 0ZM33.2302 27.0775C33.2302 27.0775 35.3527 29.1725 35.8752 30.145C35.8902 30.165 35.8977 30.185 35.9027 30.195C36.1152 30.5525 36.1652 30.83 36.0602 31.0375C35.8852 31.3825 35.2852 31.5525 35.0802 31.5675H31.3302C31.0702 31.5675 30.5252 31.5 29.8652 31.045C29.3577 30.69 28.8577 30.1075 28.3702 29.54C27.6427 28.695 27.0127 27.965 26.3777 27.965C26.297 27.9649 26.2168 27.9775 26.1402 28.0025C25.6602 28.1575 25.0452 28.8425 25.0452 30.6675C25.0452 31.2375 24.5952 31.565 24.2777 31.565H22.5602C21.9752 31.565 18.9277 31.36 16.2277 28.5125C12.9227 25.025 9.94765 18.03 9.92265 17.965C9.73515 17.5125 10.1227 17.27 10.5452 17.27H14.3327C14.8377 17.27 15.0027 17.5775 15.1177 17.85C15.2527 18.1675 15.7477 19.43 16.5602 20.85C17.8777 23.165 18.6852 24.105 19.3327 24.105C19.4541 24.1036 19.5733 24.0727 19.6802 24.015C20.5252 23.545 20.3677 20.5325 20.3302 19.9075C20.3302 19.79 20.3277 18.56 19.8952 17.97C19.5852 17.5425 19.0577 17.38 18.7377 17.32C18.8672 17.1413 19.0378 16.9964 19.2352 16.8975C19.8152 16.6075 20.8602 16.565 21.8977 16.565H22.4752C23.6002 16.58 23.8902 16.6525 24.2977 16.755C25.1227 16.9525 25.1402 17.485 25.0677 19.3075C25.0452 19.825 25.0227 20.41 25.0227 21.1C25.0227 21.25 25.0152 21.41 25.0152 21.58C24.9902 22.5075 24.9602 23.56 25.6152 23.9925C25.7006 24.0461 25.7993 24.0746 25.9002 24.075C26.1277 24.075 26.8127 24.075 28.6677 20.8925C29.2397 19.8681 29.7369 18.8037 30.1552 17.7075C30.1927 17.6425 30.3027 17.4425 30.4327 17.365C30.5286 17.3161 30.635 17.2912 30.7427 17.2925H35.1952C35.6802 17.2925 36.0127 17.365 36.0752 17.5525C36.1852 17.85 36.0552 18.7575 34.0227 21.51L33.1152 22.7075C31.2727 25.1225 31.2727 25.245 33.2302 27.0775Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link social__link-interactive"
+                  href="https://facebook.com/"
+                  target="_blank"
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.000152588 25.1396C0.000152588 37.5687 9.02724 47.9042 20.8335 50V31.9437H14.5835V25H20.8335V19.4438C20.8335 13.1937 24.8606 9.72292 30.5564 9.72292C32.3606 9.72292 34.3064 10 36.1106 10.2771V16.6667H32.9168C29.8606 16.6667 29.1668 18.1937 29.1668 20.1396V25H35.8335L34.7231 31.9437H29.1668V50C40.9731 47.9042 50.0002 37.5708 50.0002 25.1396C50.0002 11.3125 38.7502 0 25.0002 0C11.2502 0 0.000152588 11.3125 0.000152588 25.1396Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link social__link-interactive"
+                  href="https://desktop.telegram.org/"
+                  target="_blank"
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M50.0001 25C50.0001 31.6304 47.3662 37.9893 42.6778 42.6777C37.9894 47.3661 31.6305 50 25.0001 50C18.3697 50 12.0109 47.3661 7.32245 42.6777C2.63404 37.9893 0.00012207 31.6304 0.00012207 25C0.00012207 18.3696 2.63404 12.0107 7.32245 7.32233C12.0109 2.63392 18.3697 0 25.0001 0C31.6305 0 37.9894 2.63392 42.6778 7.32233C47.3662 12.0107 50.0001 18.3696 50.0001 25ZM25.897 18.4563C23.4657 19.4688 18.6032 21.5625 11.3157 24.7375C10.1345 25.2062 9.51262 25.6687 9.45637 26.1187C9.36262 26.8781 10.3157 27.1781 11.6126 27.5875L12.1595 27.7594C13.4345 28.175 15.1532 28.6594 16.0439 28.6781C16.8564 28.6969 17.7595 28.3656 18.7564 27.6781C25.5657 23.0813 29.0814 20.7594 29.3001 20.7094C29.4564 20.6719 29.6751 20.6281 29.8189 20.7594C29.9657 20.8875 29.9501 21.1344 29.9345 21.2C29.8407 21.6031 26.1001 25.0781 24.1657 26.8781C23.5626 27.4406 23.1345 27.8375 23.047 27.9281C22.8543 28.125 22.6585 28.3188 22.4595 28.5094C21.272 29.6531 20.3845 30.5094 22.5064 31.9094C23.5282 32.5844 24.347 33.1375 25.1626 33.6937C26.0501 34.3 26.9376 34.9031 28.0876 35.6594C28.3782 35.8469 28.6595 36.05 28.9314 36.2437C29.9657 36.9812 30.9001 37.6437 32.047 37.5375C32.7157 37.475 33.4064 36.85 33.7564 34.975C34.5845 30.5469 36.2126 20.9562 36.5876 17.0031C36.6105 16.6745 36.5969 16.3444 36.547 16.0187C36.5176 15.756 36.3904 15.5139 36.1907 15.3406C35.9064 15.1443 35.5674 15.0427 35.222 15.05C34.2845 15.0656 32.8376 15.5688 25.897 18.4563Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <img
+            class="socials__map"
+            src="./image/contacts/map.jpg"
+            alt="карта"
+          />
+        </div>
+        <div class="socials__footer">
+          <p>© Game Over, 2022</p>
+          <div class="footer-author">
+            <p>Design by Anastasia Ilina</p>
+            <p>ilina9825@gmail.com</p>
+          </div>
+        </div>
       </div>
     </section>
   </body>

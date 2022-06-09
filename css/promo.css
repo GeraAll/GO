@@ -1,0 +1,45 @@
+.promo__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.promo__list {
+  display: flex;
+  gap: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.promo__item {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 380px;
+  height: 228px;
+  padding: 20px 40px;
+  font-size: 20px;
+  line-height: 28px;
+  background: transparent;
+}
+
+.promo__item-vr {
+  background-image: url(../image/promo/VR.jpg);
+}
+.promo__item-audio {
+  background-image: url(../image/promo/audio5.1.jpg);
+}
+.promo__item-karaore {
+  background-image: url(../image/promo/karaoke.jpg);
+}
+.promo__item-game {
+  background-image: url(../image/promo/game.jpg);
+}
+.promo__item-cinema {
+  background-image: url(../image/promo/cinema.jpg);
+}
+.promo__item-console {
+  background-image: url(../image/promo/console.jpg);
+}

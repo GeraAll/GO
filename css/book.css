@@ -1,0 +1,198 @@
+.book {
+  background-color: #440f51;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.book__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+.book__legend {
+  text-transform: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.book__hall {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  border: none;
+  margin-bottom: 60px;
+}
+
+.book__input {
+  position: absolute;
+  appearance: none;
+}
+
+.book__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 250px;
+  height: 55px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: black;
+  background-color: white;
+}
+
+.book__label:hover {
+  outline: 3px solid #640aa3;
+  background-color: #eadeed;
+}
+
+.book__label:active {
+  outline: 3px solid white;
+  background-color: #6c0287;
+  color: white;
+}
+
+.book__label:focus {
+  outline: 3px solid #640aa3;
+}
+
+.book__game {
+  margin-bottom: 60px;
+}
+
+.fieldset-game {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.book__legend-left {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.book__game-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  text-transform: none;
+}
+
+.book__game-item {
+  display: flex;
+  align-items: center;
+}
+
+.book__input-console {
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+}
+
+.book__input-console:focus {
+  outline: 1px solid #cd06ff;
+}
+
+.book__game-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.book__time {
+  margin-bottom: 40px;
+}
+
+.book__booking {
+  padding: 0 50px;
+}
+
+.book__date {
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.date-one {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 300px;
+  gap: 36px 32px;
+  flex-wrap: wrap;
+  align-self: flex-end;
+}
+
+.date-input {
+  width: 134px;
+  height: 52px;
+}
+
+.date-input:focus {
+  outline: 2px solid #cd06ff;
+}
+
+.date-number {
+  width: 100%;
+  height: 52px;
+}
+
+.date-number:focus {
+  outline: 2px solid #cd06ff;
+}
+
+.date-two {
+  align-self: flex-end;
+  flex-basis: 27%;
+  gap: 14px;
+  text-align: left;
+}
+
+.date-label {
+  text-transform: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+
+.book__button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-hall {
+  border: 0;
+  border-radius: 10px;
+  padding: 16px 50px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6c0287;
+}
+
+.button-hall:hover {
+  outline: 3px solid #640aa3;
+  background-color: #eadeed;
+}
+
+.button-hall:active {
+  outline: 3px solid #eadeed;
+  background-color: #eadeed;
+}
+
+.button-hall:focus {
+  outline: 3px solid #6c0287;
+}

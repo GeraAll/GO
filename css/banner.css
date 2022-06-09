@@ -1,12 +1,7 @@
-.banner {
-  padding-top: 146px;
-}
-
 .container-banner {
   height: 823px;
   position: relative;
   padding: 0;
-  margin-bottom: 100px;
 }
 
 .container-banner:after {
@@ -17,6 +12,7 @@
   background: url(../image/banner/men-desktop.png);
   bottom: 0;
   right: 0;
+  z-index: 0;
 }
 
 .banner__items {
@@ -32,5 +28,91 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 50px;
-  margin: 0 0 0 100px;
+  margin-bottom: 30px;
+  padding-left: 100px;
+}
+
+.banner__row {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 175px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  max-width: 193px;
+}
+
+.row__four {
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 141px;
+  color: #cd06ff;
+}
+
+.row__new {
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 106px;
+  color: #cd06ff;
+}
+
+.row__paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.button-banner {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: white;
+  background-color: #6c0287;
+  box-shadow: 0 0 7px 2px #6c0287;
+  border-radius: 10px;
+  border: none;
+  padding: 25px 69px;
+}
+
+.button-banner:hover {
+  background-color: #840aa3;
+}
+
+.button-banner:active {
+  background-color: #640aa3;
+}
+
+.button-banner:focus {
+  background-color: #840aa3;
+}
+
+.banner__link {
+  position: absolute;
+  top: 669px;
+  right: 544px;
+  z-index: 1;
+}
+
+.banner-interactive:hover {
+  background-image: url(../image/banner/down_hover.svg);
+  background-repeat: no-repeat;
+}
+
+.banner-interactive:active {
+  background-image: url(../image/banner/down_active.svg);
+}
+
+.banner-interactive:focus {
+  outline: 3px solid #cd06ff;
 }
