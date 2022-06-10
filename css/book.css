@@ -67,7 +67,7 @@
   margin-bottom: 60px;
 }
 
-.fieldset-game {
+.book__fieldset-game {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -125,7 +125,7 @@
   align-items: flex-start;
 }
 
-.date-one {
+.book__date-timing {
   display: flex;
   flex-direction: row;
   flex-basis: 300px;
@@ -134,32 +134,32 @@
   align-self: flex-end;
 }
 
-.date-input {
+.book__date-input {
   width: 134px;
   height: 52px;
 }
 
-.date-input:focus {
+.book__date-input:focus {
   outline: 2px solid #cd06ff;
 }
 
-.date-number {
+.book__date-text {
   width: 100%;
   height: 52px;
 }
 
-.date-number:focus {
+.book__date-text:focus {
   outline: 2px solid #cd06ff;
 }
 
-.date-two {
+.book__date-timing-main {
   align-self: flex-end;
   flex-basis: 27%;
   gap: 14px;
   text-align: left;
 }
 
-.date-label {
+.book__date-label {
   text-transform: none;
   font-weight: 700;
   font-size: 14px;
@@ -172,7 +172,7 @@
   justify-content: flex-end;
 }
 
-.button-hall {
+.book__button-hall {
   border: 0;
   border-radius: 10px;
   padding: 16px 50px;
@@ -183,16 +183,16 @@
   color: #6c0287;
 }
 
-.button-hall:hover {
+.book__button-hall:hover {
   outline: 3px solid #640aa3;
   background-color: #eadeed;
 }
 
-.button-hall:active {
+.book__button-hall:active {
   outline: 3px solid #eadeed;
   background-color: #eadeed;
 }
 
-.button-hall:focus {
+.book__button-hall:focus {
   outline: 3px solid #6c0287;
 }

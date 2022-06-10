@@ -18,6 +18,7 @@
   margin-bottom: 20px;
   padding-right: 70px;
   padding-left: 70px;
+  cursor: pointer;
 }
 
 .faq__item:nth-child(even) {
@@ -34,6 +35,7 @@
   height: 46px;
   border: none;
   background-color: inherit;
+  background-repeat: no-repeat;
 }
 
 .faq__button-white {
@@ -56,6 +58,6 @@
   background: url(../image/faq/open-hover.svg);
 }
 
-.faq__button-violet:active {
+.faq__button-violet {
   background: url(../image/faq/close.svg);
 }

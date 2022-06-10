@@ -1,8 +1,7 @@
 .menu {
   padding-top: 30px;
-  padding-bottom: 3px;
 }
-.container-menu {
+.menu__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +23,7 @@
   line-height: 50px;
 }
 
-.button-tel {
+.menu__tel {
   text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
@@ -37,17 +36,17 @@
   color: white;
 }
 
-.button-tel:hover {
+.menu__tel:hover {
   border: 3px solid #6c0287;
   background-color: #6c0287;
 }
 
-.button-tel:active {
+.menu__tel:active {
   border: 3px solid #640aa3;
   background-color: #640aa3;
 }
 
-.button-tel:focus {
+.menu__tel:focus {
   border: 3px solid #6c0287;
   background-color: #6c0287;
 }

@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <header>
-      <section class="menu">
-        <div class="container container-menu">
+    <header class="menu">
+      <div class="container">
+        <div class="menu__container">
           <img src="./image/menu/logo.svg" alt="Game Over" />
           <nav class="menu__nav">
             <ul class="menu__list">
@@ -19,41 +19,50 @@
               <li class="menu__items"><a href="#socials">Контакты</a></li>
             </ul>
           </nav>
-          <button class="button-tel" type="submit" aria-label="заказать звонок">
+          <button
+            class="menu__tel"
+            type="submit"
+            aria-label="заказать звонок от оператора"
+          >
             Заказать звонок
           </button>
         </div>
-      </section>
+      </div>
     </header>
     <section class="banner">
-      <div class="container container-banner">
-        <h1 class="banner__items">Game Over</h1>
-        <p class="banner__paragraph">Новый формат игр и отдыха</p>
-        <div class="banner__row">
-          <div class="row">
-            <p class="row__four">4</p>
-            <p class="row__paragraph">Тематических зала</p>
+      <div class="container">
+        <div class="banner__container">
+          <h1 class="banner__items">Game Over</h1>
+          <p class="banner__paragraph">Новый формат игр и отдыха</p>
+          <div class="banner__row">
+            <div class="banner__row-promo">
+              <p class="banner__row-four">4</p>
+              <p class="banner__row-paragraph">Тематических зала</p>
+            </div>
+            <div class="banner__row-promo">
+              <p class="banner__row-new">new</p>
+              <p class="banner__row-paragraph">Новейшая аппаратура</p>
+            </div>
           </div>
-          <div class="row">
-            <p class="row__new">new</p>
-            <p class="row__paragraph">Новейшая аппаратура</p>
+          <div class="banner__button">
+            <a
+              class="banner__button-book"
+              href="#book"
+              aria-label="Бронирование залов"
+            >
+              забронировать
+            </a>
           </div>
-        </div>
-        <div class="banner__button">
-          <a class="button-banner" href="#book" aria-label="Бронирование залов">
-            забронировать
+          <a href="#promo" class="banner__link banner__link-interactive">
+            <img src="./image/banner/down.svg" alt="спустится к промо" />
           </a>
         </div>
-        <a href="#promo" class="banner__link banner-interactive">
-          <img src="./image/banner/down.svg" alt="спустится к промо" />
-        </a>
       </div>
     </section>
     <section class="promo" id="promo">
       <div class="container">
         <h2 class="promo__title">
-          У нас есть все для классного <br />
-          отдыха с друзьями!
+          У нас есть все для классного отдыха с друзьями!
         </h2>
         <ul class="promo__list">
           <li class="promo__item promo__item-vr">VR очки</li>
@@ -118,7 +127,7 @@
           <div class="book__booking">
             <fieldset class="book__game">
               <legend class="book__legend">Собери набор развлечений</legend>
-              <div class="fieldset-game">
+              <div class="book__fieldset-game">
                 <fieldset>
                   <legend class="book__legend book__legend-left">
                     Приставка:
@@ -154,9 +163,9 @@
                         type="radio"
                         name="prefix"
                         value="X-box One S"
-                        id="X-box One S"
+                        id="X-boxOneS"
                       />
-                      <label class="book__game-label" for="X-box One S"
+                      <label class="book__game-label" for="X-boxOneS"
                         >X-box One S</label
                       >
                     </li>
@@ -257,11 +266,21 @@
             <fieldset class="book__time">
               <legend class="book__legend">Выбери дату и время</legend>
               <div class="book__date">
-                <div class="date-one">
-                  <input class="date-input" type="date" name="date" required />
-                  <input class="date-input" type="time" name="time" required />
+                <div class="book__date-timing">
                   <input
-                    class="date-number"
+                    class="book__date-input"
+                    type="date"
+                    name="date"
+                    required
+                  />
+                  <input
+                    class="book__date-input"
+                    type="time"
+                    name="time"
+                    required
+                  />
+                  <input
+                    class="book__date-text"
                     type="number"
                     name="number"
                     max="30"
@@ -269,31 +288,31 @@
                     required
                   />
                 </div>
-                <div class="date-one date-two">
+                <div class="book__date-timing book__date-timing-main">
                   <div>
-                    <label class="date-label">Имя</label>
+                    <label class="book__date-label">Имя</label>
                     <input
-                      class="date-number"
+                      class="book__date-text"
                       type="text"
                       name="name"
                       required
                     />
                   </div>
                   <div>
-                    <label class="date-label">Фамилия</label>
+                    <label class="book__date-label">Фамилия</label>
                     <input
-                      class="date-number"
+                      class="book__date-text"
                       type="text"
                       name="surname"
                       required
                     />
                   </div>
                 </div>
-                <div class="date-one date-two">
+                <div class="book__date-timing book__date-timing-main">
                   <div>
-                    <label class="date-label">Телефон </label>
+                    <label class="book__date-label">Телефон </label>
                     <input
-                      class="date-number"
+                      class="book__date-text"
                       type="tel"
                       name="phone"
                       required
@@ -301,9 +320,9 @@
                     />
                   </div>
                   <div>
-                    <label class="date-label">E-mail </label>
+                    <label class="book__date-label">E-mail </label>
                     <input
-                      class="date-number"
+                      class="book__date-text"
                       type="email"
                       name="E-mail"
                       required
@@ -314,7 +333,7 @@
             </fieldset>
             <div class="book__button">
               <button
-                class="button-hall"
+                class="book__button-hall"
                 type="submit"
                 aria-label="Бронирование залов"
               >
