@@ -51,16 +51,19 @@
 .book__label:hover {
   outline: 3px solid #640aa3;
   background-color: #eadeed;
+  transition: 0.3s ease-in;
 }
 
 .book__label:active {
   outline: 3px solid white;
   background-color: #6c0287;
   color: white;
+  transition: 0.3s ease-in;
 }
 
 .book__label:focus {
   outline: 3px solid #640aa3;
+  transition: 0.3s ease-in;
 }
 
 .book__game {
@@ -100,6 +103,7 @@
 
 .book__input-console:focus {
   outline: 1px solid #cd06ff;
+  transition: 0.3s ease-in;
 }
 
 .book__game-label {
@@ -137,19 +141,23 @@
 .book__date-input {
   width: 134px;
   height: 52px;
+  padding: 20px 12px;
 }
 
 .book__date-input:focus {
   outline: 2px solid #cd06ff;
+  transition: 0.3s ease-in;
 }
 
 .book__date-text {
   width: 100%;
   height: 52px;
+  padding: 20px 12px;
 }
 
 .book__date-text:focus {
   outline: 2px solid #cd06ff;
+  transition: 0.3s ease-in;
 }
 
 .book__date-timing-main {
@@ -186,13 +194,19 @@
 .book__button-hall:hover {
   outline: 3px solid #640aa3;
   background-color: #eadeed;
+  transition: 0.3s ease-in;
+  transform: scale(1.05);
 }
 
 .book__button-hall:active {
   outline: 3px solid #eadeed;
   background-color: #eadeed;
+  transition: 0.3s ease-in;
+  transform: scale(1.05);
 }
 
 .book__button-hall:focus {
   outline: 3px solid #6c0287;
+  transition: 0.3s ease-in;
+  transform: scale(1.05);
 }

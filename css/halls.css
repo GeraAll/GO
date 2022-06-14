@@ -27,6 +27,11 @@
   background: transparent;
 }
 
+.halls__item:hover {
+  transition: 2s ease;
+  transform: scale(1.1);
+}
+
 .halls__item_img_vibes {
   background-image: url(../image/halls/80s-vibes.jpg);
 }

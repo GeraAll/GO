@@ -26,9 +26,15 @@
   background: transparent;
 }
 
+.promo__item:hover {
+  transition: 2s ease;
+  transform: scale(1.1);
+}
+
 .promo__item-vr {
   background-image: url(../image/promo/VR.jpg);
 }
+
 .promo__item-audio {
   background-image: url(../image/promo/audio5.1.jpg);
 }

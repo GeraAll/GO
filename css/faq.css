@@ -42,22 +42,30 @@
   background-image: url(../image/faq/open-purple.svg);
 }
 
-.faq__button-white:hover {
+.faq__item:hover > .faq__button-white {
   background: url(../image/faq/open-purple-hover.svg);
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
 }
 
-.faq__button-white:active {
+.faq__item:active > .faq__button-white {
   background: url(../image/faq/close-purple.svg);
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
 }
 
 .faq__button-violet {
   background: url(../image/faq/open.svg);
 }
 
-.faq__button-violet:hover {
+.faq__item:hover > .faq__button-violet {
   background: url(../image/faq/open-hover.svg);
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
 }
 
-.faq__button-violet {
+.faq__item:active > .faq__button-violet {
   background: url(../image/faq/close.svg);
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
 }

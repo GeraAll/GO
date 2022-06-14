@@ -39,14 +39,17 @@
 .menu__tel:hover {
   border: 3px solid #6c0287;
   background-color: #6c0287;
+  transition: 0.5s ease-in;
 }
 
 .menu__tel:active {
   border: 3px solid #640aa3;
   background-color: #640aa3;
+  transition: 0.5s ease-in;
 }
 
 .menu__tel:focus {
   border: 3px solid #6c0287;
   background-color: #6c0287;
+  transition: 0.5s ease-in;
 }
