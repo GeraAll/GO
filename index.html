@@ -44,15 +44,13 @@
               <p class="banner__row-paragraph">Новейшая аппаратура</p>
             </div>
           </div>
-          <div class="banner__button">
-            <a
-              class="banner__button-book"
-              href="#book"
-              aria-label="Бронирование залов"
-            >
-              забронировать
-            </a>
-          </div>
+          <a
+            class="banner__button-book"
+            aria-label="Бронирование залов"
+            href="#book"
+          >
+            забронировать
+          </a>
           <a href="#promo" class="banner__link banner__link-interactive">
             <img src="./image/banner/down.svg" alt="спустится к промо" />
           </a>
@@ -66,12 +64,12 @@
         </h2>
         <ul class="promo__list">
           <li class="promo__item promo__item-vr">VR очки</li>
-          <li class="promo__item promo__item-audio">
+          <li class="promo__item promo__item-audio promo__item-audio-margin">
             Аудио система 5.1 с отличным звуком
           </li>
           <li class="promo__item promo__item-karaore">Караоке(4 микрофона)</li>
           <li class="promo__item promo__item-game">Настольная игра</li>
-          <li class="promo__item promo__item-cinema">
+          <li class="promo__item promo__item-cinema promo__item-audio-margin">
             Кино сервис Netflix, IVI, MegoGo, КиноПоиск, Okko
           </li>
           <li class="promo__item promo__item-console">PlayStation 5</li>
@@ -95,34 +93,44 @@
           <h3 class="book__title">Забронировать зал просто</h3>
           <fieldset class="book__hall">
             <legend class="book__legend">Выбери зал</legend>
-            <input
-              class="book__input"
-              type="radio"
-              name="hall"
-              value="80's vibes"
-            />
-            <label class="book__label">80's vibes</label>
-            <input
-              class="book__input"
-              type="radio"
-              name="hall"
-              value="Star wars"
-            />
-            <label class="book__label">Star wars </label>
-            <input
-              class="book__input"
-              type="radio"
-              name="hall"
-              value="Wild west"
-            />
-            <label class="book__label">Wild west </label>
-            <input
-              class="book__input"
-              type="radio"
-              name="hall"
-              value="Neon style"
-            />
-            <label class="book__label">Neon style </label>
+            <div class="book__room">
+              <label class="book__label">
+                <input
+                  class="book__input"
+                  type="radio"
+                  name="hall"
+                  value="80's vibes"
+                />
+                <span>80's vibes</span>
+              </label>
+              <label class="book__label">
+                <input
+                  class="book__input"
+                  type="radio"
+                  name="hall"
+                  value="Star wars"
+                />
+                <span>Star wars</span>
+              </label>
+              <label class="book__label">
+                <input
+                  class="book__input"
+                  type="radio"
+                  name="hall"
+                  value="Wild west"
+                />
+                <span>Wild west</span>
+              </label>
+              <label class="book__label">
+                <input
+                  class="book__input"
+                  type="radio"
+                  name="hall"
+                  value="Neon style"
+                />
+                <span>Neon style</span>
+              </label>
+            </div>
           </fieldset>
           <div class="book__booking">
             <fieldset class="book__game">
@@ -386,11 +394,9 @@
         <ul class="feedback__list">
           <li class="feedback__item">
             <figure class="feedback__figure">
-              <img
-                class="feedback__img"
-                src="image/feedback/max.jpg"
-                alt="Макс Самойлов"
-              />
+              <div class="feedback__img">
+                <img src="image/feedback/max.png" alt="Макс Самойлов" />
+              </div>
               <figcaption>Макс Самойлов</figcaption>
             </figure>
             <p class="feedback__paragraph">
@@ -401,11 +407,9 @@
           </li>
           <li class="feedback__item">
             <figure class="feedback__figure">
-              <img
-                class="feedback__img"
-                src="image/feedback/oks.jpg"
-                alt="Оксана Григорьева"
-              />
+              <div class="feedback__img">
+                <img src="image/feedback/oks.png" alt="Оксана Григорьева" />
+              </div>
               <figcaption>Оксана Григорьева</figcaption>
             </figure>
             <p class="feedback__paragraph">
@@ -415,11 +419,9 @@
           </li>
           <li class="feedback__item">
             <figure class="feedback__figure">
-              <img
-                class="feedback__img"
-                src="image/feedback/nik.jpg"
-                alt="Никита Ященко"
-              />
+              <div class="feedback__img">
+                <img src="image/feedback/nik.png" alt="Никита Ященко" />
+              </div>
               <figcaption>Никита Ященко</figcaption>
             </figure>
             <p class="feedback__paragraph">

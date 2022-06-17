@@ -21,22 +21,21 @@
 }
 
 .book__hall {
-  display: flex;
-  align-items: flex-start;
-  gap: 60px;
   border: none;
   margin-bottom: 60px;
 }
 
-.book__input {
-  position: absolute;
-  appearance: none;
+.book__room {
+  display: flex;
+  justify-content: space-between;
 }
 
 .book__label {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
   flex-basis: 250px;
   height: 55px;
   font-weight: 700;
@@ -45,27 +44,53 @@
   cursor: pointer;
   border-radius: 8px;
   color: black;
+}
+
+.book__input {
+  position: absolute;
+  appearance: none;
+}
+
+.book__input::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 250px;
+  height: 55px;
+  left: -125.5px;
+  bottom: -27.5px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  color: black;
   background-color: white;
 }
 
-.book__label:hover {
+.book__input:hover::before {
   outline: 3px solid #640aa3;
   background-color: #eadeed;
   transition: 0.3s ease-in;
 }
 
-.book__label:active {
+.book__input:focus::before {
+  outline: 3px solid #640aa3;
+  background-color: white;
+  transition: 0.3s ease-in;
+}
+
+.book__input:active::before {
   outline: 3px solid white;
   background-color: #6c0287;
   color: white;
   transition: 0.3s ease-in;
 }
 
-.book__label:focus {
-  outline: 3px solid #640aa3;
+.book__input:checked::before {
+  outline: 3px solid white;
+  background-color: #6c0287;
+  color: white;
   transition: 0.3s ease-in;
 }
-
 .book__game {
   margin-bottom: 60px;
 }
@@ -99,6 +124,7 @@
   width: 27px;
   height: 27px;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .book__input-console:focus {
@@ -198,15 +224,16 @@
   transform: scale(1.05);
 }
 
-.book__button-hall:active {
-  outline: 3px solid #eadeed;
-  background-color: #eadeed;
+.book__button-hall:focus {
+  outline: 3px solid #6c0287;
+  background-color: white;
   transition: 0.3s ease-in;
   transform: scale(1.05);
 }
 
-.book__button-hall:focus {
-  outline: 3px solid #6c0287;
-  transition: 0.3s ease-in;
+.book__button-hall:active {
+  outline: 3px solid #eadeed;
+  background-color: #eadeed;
+  transition: 0.2s ease-in;
   transform: scale(1.05);
 }

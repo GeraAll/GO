@@ -1,3 +1,7 @@
+.promo {
+  min-height: 808px;
+}
+
 .promo__title {
   max-width: 800px;
   font-style: normal;
@@ -38,15 +42,23 @@
 .promo__item-audio {
   background-image: url(../image/promo/audio5.1.jpg);
 }
+
 .promo__item-karaore {
   background-image: url(../image/promo/karaoke.jpg);
 }
+
 .promo__item-game {
   background-image: url(../image/promo/game.jpg);
 }
+
 .promo__item-cinema {
   background-image: url(../image/promo/cinema.jpg);
 }
+
 .promo__item-console {
   background-image: url(../image/promo/console.jpg);
+}
+
+.promo__item-audio-margin {
+  transform: translateY(70px);
 }

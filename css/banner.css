@@ -90,13 +90,13 @@
   transition: 0.5s ease-in;
 }
 
-.banner__button-book:active {
-  background-color: #640aa3;
+.banner__button-book:focus {
+  background-color: #840aa3;
   transition: 0.5s ease-in;
 }
 
-.banner__button-book:focus {
-  background-color: #840aa3;
+.banner__button-book:active {
+  background-color: #640aa3;
   transition: 0.5s ease-in;
 }
 
@@ -114,10 +114,10 @@
   transition: 0.3s ease-in;
 }
 
-.banner__link-interactive:active {
-  background-image: url(../image/banner/down_active.svg);
-}
-
 .banner__link-interactive:focus {
   outline: 3px solid #cd06ff;
+}
+
+.banner__link-interactive:active {
+  background-image: url(../image/banner/down_active.svg);
 }
