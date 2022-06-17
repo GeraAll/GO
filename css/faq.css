@@ -10,8 +10,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  color: #1c1a1a;
+  background-color: var(--main-color, white);
+  color: var(--primary-color, #1b1a1b);
   font-weight: 700;
   font-size: 24px;
   height: 87px;
@@ -22,8 +22,8 @@
 }
 
 .faq__item:nth-child(even) {
-  background-color: #440f51;
-  color: white;
+  background-color: var(--violet-bg-e, #440f51);
+  color: var(--main-color, white);
 }
 
 .faq__item:last-child {

@@ -51,7 +51,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
-  color: #cd06ff;
+  color: var(--violet-color, #cd06ff);
 }
 
 .banner__row-new {
@@ -60,7 +60,7 @@
   font-weight: 900;
   font-size: 75px;
   line-height: 106px;
-  color: #cd06ff;
+  color: var(--violet-color, #cd06ff);
 }
 
 .banner__row-paragraph {
@@ -77,26 +77,26 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 30px;
-  color: white;
-  background-color: #6c0287;
-  box-shadow: 0 0 7px 2px #6c0287;
+  color: var(--main-color, white);
+  background-color: var(--violet-bg-a, #6c0287);
+  box-shadow: 0 0 7px 2px var(--violet-bg-a, #6c0287);
   border-radius: 10px;
   border: none;
   padding: 25px 69px;
 }
 
 .banner__button-book:hover {
-  background-color: #840aa3;
+  background-color: var(--violet-bg-c, #840aa3);
   transition: 0.5s ease-in;
 }
 
 .banner__button-book:focus {
-  background-color: #840aa3;
+  background-color: var(--violet-bg-c, #840aa3);
   transition: 0.5s ease-in;
 }
 
 .banner__button-book:active {
-  background-color: #640aa3;
+  background-color: var(--violet-bg-b, #640aa3);
   transition: 0.5s ease-in;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .banner__link-interactive:focus {
-  outline: 3px solid #cd06ff;
+  outline: 3px solid var(--violet-color, #cd06ff);
 }
 
 .banner__link-interactive:active {

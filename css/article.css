@@ -60,7 +60,7 @@
   font-size: 44px;
   max-width: 38.98px;
   height: 34.41px;
-  color: #6c0287;
+  color: var(--violet-bg-a, #6c0287);
 }
 
 .article__quote-paragraph::before {
@@ -69,7 +69,7 @@
   font-size: 44px;
   width: 38.98px;
   height: 34.41px;
-  color: #6c0287;
+  color: var(--violet-bg-a, #6c0287);
 }
 
 .article__cite {
