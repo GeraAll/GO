@@ -41,6 +41,8 @@
 
 .promo__item-audio {
   background-image: url(../image/promo/audio5.1.jpg);
+  transform: translateY(70px);
+  transform-origin: 50% -700px;
 }
 
 .promo__item-karaore {
@@ -53,12 +55,10 @@
 
 .promo__item-cinema {
   background-image: url(../image/promo/cinema.jpg);
+  transform: translateY(70px);
+  transform-origin: 50% -700px;
 }
 
 .promo__item-console {
   background-image: url(../image/promo/console.jpg);
-}
-
-.promo__item-audio-margin {
-  transform: translateY(70px);
 }

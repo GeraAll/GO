@@ -72,12 +72,6 @@
   transition: 0.3s ease-in;
 }
 
-.book__input:focus::before {
-  outline: 3px solid var(--violet-bg-b, #640aa3);
-  background-color: var(--main-color, white);
-  transition: 0.3s ease-in;
-}
-
 .book__input:active::before {
   outline: 3px solid var(--main-color, white);
   background-color: var(--violet-bg-a, #6c0287);
@@ -91,6 +85,13 @@
   color: var(--main-color, white);
   transition: 0.3s ease-in;
 }
+
+.book__input:focus::before {
+  outline: 3px solid var(--violet-bg-b, #640aa3);
+  background-color: var(--main-color, white);
+  transition: 0.3s ease-in;
+}
+
 .book__game {
   margin-bottom: 60px;
 }

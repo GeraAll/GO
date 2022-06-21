@@ -73,6 +73,7 @@
 
 .social__link {
   display: block;
+  max-height: 50px;
   fill: var(--main-color, white);
 }
 
