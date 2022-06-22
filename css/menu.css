@@ -23,6 +23,10 @@
   line-height: 50px;
 }
 
+.menu__items:hover {
+  color: var(--violet-color, #cd06ff);
+}
+
 .menu__tel {
   text-transform: uppercase;
   font-style: normal;

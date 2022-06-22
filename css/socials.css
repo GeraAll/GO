@@ -30,6 +30,10 @@
   justify-content: space-between;
 }
 
+.address__link:hover {
+  color: var(--violet-color, #cd06ff);
+}
+
 .address__item {
   padding-left: 60px;
   margin-bottom: 14px;
